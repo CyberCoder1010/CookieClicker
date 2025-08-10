@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker Deluxe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1><i class="fas fa-cookie-bite"></i> Cookie Clicker Enhanced</h1>
+        </div>
+        <div class="stats-container">
+          <div class="stat-card">
+            <h3>Cookies</h3>
+            <div class="value" id="cookie-count">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Cookies Per Second</h3>
+            <div class="value" id="cps">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Clicks</h3>
+            <div class="value" id="clicks">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Cookies Per Click</h3>
+            <div class="value" id="cpc">1</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="cookie-container">
+        <div class="cookie" id="cookie">
+          <div class="cookie-text">Click Me!</div>
+        </div>
+        <div class="cookie-per-click">
+          +<span id="cookies-per-click">1</span> per click
+        </div>
+      </section>
+
+      <section class="upgrades-container">
+        <h2><i class="fas fa-arrow-up"></i> Upgrades</h2>
+        <div class="upgrades-list" id="upgrades-container">
+          <!-- Upgrades will be added here -->
+        </div>
+      </section>
+
+      <section class="achievements-container">
+        <h2><i class="fas fa-trophy"></i> Achievements</h2>
+        <div class="achievements-list" id="achievements-container">
+          <!-- Achievements will be added here -->
+        </div>
+      </section>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup-icon">
+        <i class="fas fa-info"></i>
+      </div>
+      <div class="popup-content">
+        <div class="popup-title">Notification</div>
+        <div class="popup-message">Message goes here</div>
+      </div>
+    </div>
+
+    <div class="save-notice" id="save-notice">
+      <i class="fas fa-save"></i> Game saved!
+    </div>
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/data/gameData.js"></script>
+  </body>
+</html>
